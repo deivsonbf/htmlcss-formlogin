@@ -1,0 +1,189 @@
+/***************************
+*      Formulario de Login 
+*  Autor: Deivson Bezerra Ferreira 
+*  Linkedin: https://www.linkedin.com/in/deivson-ferreira/
+*  Github: https://github.com/deivsonbf
+*
+*****************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body,html{ 
+    height: 100%; 
+    background:url("../img/fundo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{ width: 75%; margin: 0 auto; }
+
+.clear{ clear: both; }
+
+.logo img{ width: 100%; }
+
+.formulario{
+    width: 80%;
+    height: 350px;
+    position: absolute;
+    top: 150px;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.formulario--grupo{
+    width: 100%;
+    margin-bottom: 7px;
+    color: #092555;
+}
+
+.formulario--grupo:first-child{ margin-top: 18px; }
+
+.formulario--grupo label{
+    width: 36%;
+    padding: 7px;
+    display: block;
+    float: left;
+    text-align: right;
+    font-size: 20px;
+
+}
+
+.formulario--grupo input{
+    width: 55%;
+    padding: 5px;
+    display: block;
+    float: left;
+    font-size: 20px;
+    color:#092555;
+    border: #092555 2px solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+         -o-border-radius: 5px;
+}
+
+.formulario--grupo a{
+    display: block;
+    margin-left: 20px;
+    color: #092555;
+    text-align: left;
+}
+
+.formulario--grupo .button{ float: right; margin-right: 20px;}
+
+
+@media screen and (min-width: 600px) {
+    
+    .logo img{
+        width: 100%;
+    }
+    .formulario{
+        width: 50%;
+        top: 150px;
+        left: 25%;
+       
+    }
+
+    .formulario--grupo a{
+        display: block;
+        margin-left:10px;
+        color: #092555;
+        text-align: left;
+        text-decoration: underline;
+    }
+
+    
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .formulario{
+        width: 30%;
+        top: 150px;
+        left: 34.5%;
+    }
+
+    .formulario--grupo{
+        width: 100%;
+        margin-bottom: 10px;
+        color: #092555;
+    }
+
+    .formulario--grupo label{
+        width: 35%;
+        margin-left: 0px;
+        background-color: #092555;
+        color: #fff;
+        border-radius: 50px 0 0 50px;
+        -webkit-border-radius: 50px 0 0 50px;
+        -moz-border-radius: 50px 0 0 50px;
+        -ms-border-radius: 50px 0 0 50px;
+        -o-border-radius: 50px 0 0 50px;
+}   
+
+    .formulario--grupo input{
+        width: 65%;
+        border-radius: 0 50px 50px 0;
+        -webkit-border-radius: 0 50px 50px 0;
+        -moz-border-radius: 0 50px 50px 0;
+        -ms-border-radius: 0 50px 50px 0;
+        -o-border-radius: 0 50px 50px 0;
+    }
+
+    .formulario--grupo a{
+        display: block;
+        margin-left:14px;
+        color: #092555;
+        text-align: left;
+        text-decoration: underline;
+    }
+
+    .formulario--grupo .button{ margin-right: 0px;}
+}
+
+/********************
+ *  Outras classes
+ * *****************/
+.bordas{
+            border-top: 80px solid #092555;
+            border-bottom: 75px solid #092555;
+            border-radius: 10px;
+            box-shadow: 0px 1px 24px -3px rgba(9, 187, 241, 0.959);
+    -webkit-box-shadow: 0px 1px 24px -3px rgba(9, 187, 241, 0.959);
+    -webkit-border-radius: 15px;
+       -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+         -o-border-radius: 10px;
+}
+
+.button{
+            padding: 10px 30px;
+            background-color: #092555;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            color: #fff;
+            cursor: pointer;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            outline: none;
+}
+
+.button:hover{
+    color: #fff;
+    background-color: #1A7CDF;
+    border: 1px solid #092555;
+}
